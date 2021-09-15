@@ -1,21 +1,11 @@
+* {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
 body {
   position: relative;
   margin: 0;
   padding: 0;
-}
-
-main {
-  padding-top: 100px;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-
-img {
-  display: block;
 }
 
 header {
@@ -24,19 +14,59 @@ header {
   z-index: 2;
   width: 100%;
   height: 100px;
-  border-bottom: 10px solid darkblue;
+  border-bottom: 10px solid lightblue;
+  background-color: red;
+}
+
+main {
+  padding-top: 100px;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+footer {
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  height: 50px;
+  border-top: 5px solid red;
   background-color: lightblue;
 }
 
-/* Square 1 and 2 */
+.highlighted-text {
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: right;
+  text-
+  }
+
+
+h1, h2, h3 {
+  text-align: center;
+  text-decoration-color: blue;
+}
+
+img {
+  display: block;
+}
+
+p {
+  text-align: center;
+}
+
 .container {
-  width: 600px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
   margin: 20px auto;
   border: 15px solid black;
 }
 
-/* Square 2 */
+
 .absolute-container {
   position: relative;
 }
@@ -54,4 +84,40 @@ header {
     left: 650px;
     bottom: 400px;
     position: absolute;
+}
+
+
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
